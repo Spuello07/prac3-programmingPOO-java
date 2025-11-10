@@ -13,7 +13,6 @@
 - Aplicar conceptos básicos de programación orientada a objetos en Java.  
 - Diseñar e implementar una clase de regresión lineal múltiple usando solo arreglos y operaciones básicas (sin librerías externas).  
 - Desarrollar programas de prueba (`main`) que usen la clase de regresión para entrenar, predecir y evaluar el modelo.  
-- Presentar el desarrollo de forma clara en GitHub, incluyendo estructura del código, resultados de pruebas, dificultades y conclusiones.
 
 ---
 
@@ -209,6 +208,3 @@ Luego se define `X_test`, se escala, se predice y se evalúa con `Score()`.
 
 3. El escalado de datos mejora la estabilidad numérica.  
    Evita divisiones por cero y mejora la precisión del modelo.
-
-4. Los programas de prueba (`main`) validan el diseño modular.  
-   Permiten verificar fácilmente los resultados en distintos escenarios.
