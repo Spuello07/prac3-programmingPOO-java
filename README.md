@@ -71,6 +71,37 @@ src/
 
 En este apartado se explica el modelo `RegresionLinear` y un programa de prueba principal.
 
+### Contexto teórico
+
+Para entender mejor cómo funcionaba la regresión lineal, pedimos ayuda a una inteligencia artificial.  
+Nos explicó que la regresión lineal es un **problema matricial** que se resuelve aplicando operaciones de **álgebra lineal**.  
+
+También ayudó a comprender cómo se calculan los **coeficientes del modelo** y el **término independiente** mediante la ecuación normal, la cual consiste en **multiplicar matrices, obtener su traspuesta, calcular su inversa y finalmente multiplicar por el vector de valores reales**.
+
+**Fórmulas utilizadas:**
+
+- **Ecuación normal:**
+
+  ```
+  w = (Xᵀ * X)⁻¹ * Xᵀ * y
+  ```
+  Donde `w` son los pesos o coeficientes del modelo.
+
+- **Predicción:**
+
+  ```
+  ŷ = X * w + b
+  ```
+
+- **Cálculo del puntaje del modelo (R²):**
+
+  ```
+  R² = 1 - (SS_res / SS_tot)
+  ```
+  Donde `SS_res` es la suma de los errores al cuadrado y `SS_tot` la suma de las diferencias con el promedio.
+
+---
+
 ### Clase `RegresionLinear`
 
 Implementa un modelo de regresión lineal con los siguientes componentes:
@@ -148,7 +179,7 @@ Luego se define `X_test`, se escala, se predice y se evalúa con `Score()`.
 
 ### Prueba con datos de notas (`MainRegresionNotas.java`)
 
-- Tipo: Regresión múltiple.  
+- Tipo: Regresión múltiple (4 características).  
 - Salida: Pesos, bias, predicciones y `score (R²)`.
 
 ### Prueba con datos de helados (`MainRegresionHelados.java`)
